@@ -1,0 +1,429 @@
+<!doctype html>
+<html  lang="ar"  dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>المعلومات الشخصية</title>
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta name="viewport" content="widht=device-widht,initial-scale=1">
+<link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	
+	<!-- الواجهة الاول لي فيها الصورة والشعار -->
+	
+	<!-- As a link -->
+<div class=" container-fluid  ">
+<nav class="navbar navbar-light bg-light m1">
+  <a class="navbar-brand" href="#">
+    <img src="logo.png" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy">موقع التوظيف العمومي
+  </a>
+</nav>
+</div>
+	<!-- لوقو الموقع واسمه -->
+		
+		
+	
+	<!-- الواجهة الاول لي فيها الصورة والشعار -->
+	<!-----------------الواجهة الثانية لي فيها حساب المستخدم------------------->
+	<div class="container p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      
+        <span class="nav-title">
+  فضاء الترشيح على بوابة التشغيل العمومي
+</span>
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse" id="navbarNavDropdown" style="">
+  
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="https://depot.emploi-public.ma/telechargerPhoto.asp?token=NTcyOTM0NEJFMEEyRjhDQUIxMjNDRjRGRDgwMzNENUIxNjNDMkJBNThFQUUxQTUwMjhBRUJCNTk5Mjk2NzVGOTRBQjlBOUYzMjhDNjg5NEVEMDRGNUQ5Njk0NzMxQzRDQURGNzc4NUEwNDE5NjU3RUM4NTcwRDJEOEI2ODNBODg=" alt="..." class="rounded-circle nav-user-img unveil-loaded">
+        زين بوغزاله
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="candidatMPasse.asp">تغيير كلمة المرور</a>
+        <a class="dropdown-item" href="candidatDeconnexion.asp">الخروج من الفضاء</a>
+      </div>
+    </li>
+  </ul>
+  
+</div>
+      
+      </nav>
+    </div>
+	<!-----------------الواجهة الثانية لي فيها حساب المستخدم------------------->
+	
+	<div class="col">
+        
+            <nav aria-label="breadcrumb" class="mt-3">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="candidatAccueil.asp">الاستقبال</a></li>
+                <li class="breadcrumb-item active" aria-current="page">معلوماتي الشخصية</li>
+              </ol>
+            </nav>
+          
+            <div class="card-deck no-gutters">
+              <div class="card card-b-blue">
+
+                <div class="card-header p-1">
+                  <h1 class="m-1">معلوماتي الشخصية</h1>
+                </div>
+                <div class="card-body">
+
+                  <form action="candidatChangerInfo_sql.asp" id="frmInfo" name="frmInfo" method="post">
+                    <div class="row">
+                      <div class="col-md-4 text-center">
+                        
+                        <img id="photoImg" src="https://depot.emploi-public.ma/telechargerPhoto.asp?token=NTcyOTM0NEJFMEEyRjhDQUIxMjNDRjRGRDgwMzNENUIxNjNDMkJBNThFQUUxQTUwMjhBRUJCNTk5Mjk2NzVGOTRBQjlBOUYzMjhDNjg5NEVEMDRGNUQ5Njk0NzMxQzRDQURGNzc4NUEwNDE5NjU3RUM4NTcwRDJEOEI2ODNBODg=" alt="..." class="rounded-circle profile-user-img m-1 mx-auto d-block unveil-loaded">
+                        <input type="hidden" id="photo" name="photo" value="user_male.png">
+                        <a data-toggle="modal" data-height="1000" class="btn btn-secondary btn-sm m-1" href="photoUpload.asp" role="button">
+                          <i class="fas fa-folder-open"></i>
+                          إلحاق الصورة
+                        </a>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row mb-3">
+                          <div class="col-md-6">
+                            <label for="prenom">الاسم الشخصي <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form-control-sm " name="prenom" integrity>
+                            <div class="invalid-feedback">
+                              
+                            </div>
+                          </div>
+                          <div class="col-md-6 text-right">
+                            <label for="prenomFr"><span class="text-danger">*</span> Prénom</label>
+                            <input type="text" class="form-control form-control-sm text-right " name="prenomFr" integrity>
+                            <div class="invalid-feedback">
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-md-6">
+                            <label for="nom">الاسم العائلي <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form-control-sm " name="nom" integrity>
+                            <div class="invalid-feedback">
+                              
+                            </div>
+                          </div>
+                          <div class="col-md-6 text-right">
+                            <label for="nomFr"><span class="text-danger">*</span> Nom</label>
+                            <input type="text" class="form-control form-control-sm text-right " name="nomFr" integrity>
+                            <div class="invalid-feedback">
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    
+                      <div class="col-md-4 mb-3">
+                        <label for="cin">رقم البطاقة الوطنية للتعريف الإلكترونية (CNIE) <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form-control-sm " name="cin" id="cin" integrity>
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                      
+                    
+
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <label class="d-block">الجنس <span class="text-danger">*</span></label>
+                        <div class="form-control check ">
+                        <div class="custom-control custom-radio d-inline-block mr-3">
+                          <input type="radio" id="genre1" name="genre" value="m" class="custom-control-input" checked="" integrity>
+                          <label class="custom-control-label" for="genre1">ذكر</label>
+                        </div>
+                        <div class="custom-control custom-radio d-inline-block">
+                          <input type="radio" id="genre2" name="genre" value="f" class="custom-control-input" integrity>
+                          <label class="custom-control-label" for="genre2">أنثى</label>
+                        </div>
+                        </div>
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="dateNaissance">تاريخ الازدياد <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form-control-sm " name="dateNaissance" integrity>
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="lieuNaissance">مكان الازدياد <span class="text-danger">*</span></label>
+                        <input class="form-control form-control-sm " name="lieuNaissance"  autocomplete="off"   integrity>
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="adresse">العنوان <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-sm " name="adresse" integrity>
+                      <div class="invalid-feedback">
+                        
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <label for="codePostale">الرمز البريدي</label>
+                        <input type="text" class="form-control form-control-sm " name="codePostale" id="codePostale" value="39030">
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <label for="mobile">رقم الهاتف المحمول <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form-control-sm " name="mobile" id="mobile" value="0668470266">
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="fixe">رقم الهاتف الثابت</label>
+                        <input type="text" class="form-control form-control-sm " name="fixe" id="fixe" value="0668492541">
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                    </div>
+					  <!----------------------ابن من------------------------->
+					  
+					  <div class="row">
+    <div class="col-md-4 mb-3">
+		<label for="fixe">ابن(ة)<span class="text-danger">*</span></label>
+      <input type="text" class="form-control" placeholder="ابن" integrity>
+    </div>
+    <div class="col-md-4 mb-3">
+		<label for="fixe">و<span class="text-danger">*</span></label>
+      <input type="text" class="form-control" placeholder="و" integrity>
+    </div>
+  </div>
+					  <!--------------------------------------ابن من------------------------------------------->
+					  
+					  <!--------------------------------الجنسية------------------------------------------------>
+					  
+					  
+					  <div class="row">
+    <div class="col">
+		<label for="fixe">الجنسية:<span class="text-danger">*</span></label>
+      <input type="text" class="form-control" placeholder="الجنسية" integrity>
+    </div>
+    
+  </div>
+					  <!-------------------------------الجنسية---------------------------------------------------->
+					  
+					  <!---------------الزواج--------------------------------------------->
+					  
+					  <label for="fixe">متزوج:<span class="text-danger">*</span></label>
+					  <br/>
+						  
+					  <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" integrity>
+  <label class="custom-control-label" for="customRadioInline1">نعم</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" integrity>
+  <label class="custom-control-label" for="customRadioInline2">لا</label>
+</div>
+						 
+						  
+					   <!---------------الزواج--------------------------------------------->
+<!-------عدد الاولاد------------------------>
+					  
+					  <div class="row">
+    <div class="col">
+		<label for="fixe">عدد الأولاد:</label>
+      <input type="text" class="form-control" placeholder="عدد الاولاد">
+    </div>
+    
+  </div>
+					  
+					  
+					  <!---------------------عدد الاولاد------------------------------>
+					  
+					  
+					  <!---------------------صفة ذوي حقوق الشهيد------------------------------>
+					  
+					   <label for="fixe">هل لديك صفة ذوي حقوق الشهيد:<span class="text-danger">*</span></label>
+					  <br/>
+						  
+					  <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="1" name="1" class="custom-control-input" integrity>
+  <label class="custom-control-label" for="1">نعم</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="2" name="1" class="custom-control-input" integrity>
+  <label class="custom-control-label" for="2">لا</label>
+</div>
+					  
+					  <!---------------------صفة ذوي حقوق الشهيد------------------------------>
+					  
+					  
+					  
+					  
+					  
+					  <!---------------هل أنت من ذوي اإلحتياجات الخاصة--------------------------------------------->
+					  					  <br/>
+					  <br/>
+
+					  <label for="fixe">هل أنت من ذوي اإلحتياجات الخاصة:<span class="text-danger">*</span></label>
+					  <br/>
+						  
+					  <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" integrity>
+  <label class="custom-control-label" for="customRadioInline3">نعم</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input" integrity>
+  <label class="custom-control-label" for="customRadioInline4">لا</label>
+</div>
+						 
+						  
+					   <!---------------هل أنت من ذوي اإلحتياجات الخاصة--------------------------------------------->
+<!------- طبيعة اإلعاقة------------------------>
+					  
+					  <div class="row">
+    <div class="col">
+		<label for="fixe">أذكر طبيعة الاعاقة:<span class="text-danger">*</span></label>
+      <input type="text" class="form-control" integrity>
+    </div>
+    
+  </div>
+					  
+					  
+					  <!---------------------طبيعة اإلعاقة ------------------------------>
+					  
+					  <!------------------الوضعية اتجاه الخدمة الوطنية------------------------>
+					  
+					  <br/>
+					  <br/>
+
+					  <label for="fixe">الوضعية اتجاه الخدمة الوطنية:<span class="text-danger">*</span></label>
+					  <br/>
+						  
+					  <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="" name="" class="custom-control-input">
+  <label class="custom-control-label" for="">مؤدي</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="" name="" class="custom-control-input">
+  <label class="custom-control-label" for="">معفى</label>
+</div>
+					  <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="" name="" class="custom-control-input">
+  <label class="custom-control-label" for="">مؤجل</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="" name="" class="custom-control-input">
+  <label class="custom-control-label" for="">مسجل</label>
+</div>
+					  
+					  
+					  
+					  
+					  
+					  
+					  
+					  					  <!------------------الوضعية اتجاه الخدمة الوطنية------------------------>
+					  <!--------------------مرجع الوثيقة--------------->
+
+	 <br/>
+					  <br/>
+
+					  <label for="fixe">مرجع الوثيقة:<span class="text-danger">*</span></label>
+					  <div class="row">
+					<div class="col-md-4 mb-3">
+                        <label for="codePostale">الرقم:<span class="text-danger" >*</span></label>
+                        <input type="text" class="form-control form-control-sm " name="num" integrity>
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>  
+	                    
+					  <div class="col-md-4 mb-3">
+                        <label for="dateNaissance">تاريخ الاصدار <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form-control-sm " name="date_n" integrity>
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+						  </div>
+				  
+					  					  <!--------------------مرجع الوثيقة--------------->
+
+
+                    <div class="row">
+                      <div class="col-md-12 mb-2">
+                        <span class="text-danger">*</span> : خانات إجبارية
+                      </div>
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <input name="Token" value="2yq5xr19wvndwbkuhtkm5wuq42gwdhemozdelso0" type="hidden">
+                    <input type="hidden" name="idc" value="">
+                    <input type="hidden" name="ide" value="">
+                    <input type="hidden" name="idex" value="">
+
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <button class="btn btn-primary btn-sm btn-block" type="submit" name="submit" value="ok">تسجيل</button>
+						  <input type="hidden" name="ko"/>
+                      </div>
+                      <div class="col-md-4 offset-md-4 mb-3">
+                        <a class="btn btn-secondary btn-sm btn-block" href="candidatAccueil.asp" role="button">الرجوع إلى صفحة الاستقبال</a>
+                      </div>
+                    </div>
+
+                    </form>
+
+
+                </div>
+
+              </div>
+            </div>
+          
+          </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--خاص بالربط بالبوتستراب-->	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
+	
+	
+	
+<script>
+	
+	$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+	
+	</script>
+	<!--خاص بالربط بالبوتستراب-->
+</body>
+</html>
